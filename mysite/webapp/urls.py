@@ -4,7 +4,6 @@ from webapp import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^webapp/$', include('webapp.urls')),
-    url(r'^hey/$', views.index, name='index'),
+        url(r'^hey/$', views.index, name='index'),
     url(r'^admin/$', admin.site.urls),
 ]
